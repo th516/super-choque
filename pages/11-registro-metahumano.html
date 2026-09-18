@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 - Registro Metahumano</title>
+</head>
+
+<body>
+    <header>
+        <h1>11. Registro de Ocorrência Metahumana</h1>
+        <p>Formulário oficial de cadastro e notificação do Departamento de Segurança de Dakota</p>
+    </header>
+
+    <nav>
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="01-rotina-em-dakota.html">01. Rotina em Dakota</a></li>
+            <li><a href="02-o-big-bang.html">02. O Big Bang</a></li>
+            <li><a href="03-despertar-eletrico.html">03. Despertar Elétrico</a></li>
+            <li><a href="04-o-nascimento-do-heroi.html">04. O Nascimento do Herói</a></li>
+            <li><a href="05-primeira-patrulha.html">05. Primeira Patrulha</a></li>
+            <li><a href="06-os-bebes-do-big-bang.html">06. Os Bebês do Big Bang</a></li>
+            <li><a href="07-confronto-com-hotstreak.html">07. Confronto com Hotstreak</a></li>
+            <li><a href="08-vida-dupla-em-risco.html">08. Vida Dupla em Risco</a></li>
+            <li><a href="09-batalha-eletromagnetica.html">09. Batalha Eletromagnética</a></li>
+            <li><a href="10-o-protetor-de-dakota.html">10. O Protetor de Dakota</a></li>
+            <li><a href="11-registro-metahumano.html">11. Registro Metahumano</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header>
+                <h2>Ficha de Notificação Compulsória</h2>
+            </header>
+            <section>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Dados do Avistamento ou Incidente</legend>
+
+                        <p>
+                            <label for="nome-informante">Nome Completo do Notificante:</label><br>
+                            <input type="text" id="nome-informante" name="nome" placeholder="Ex: Oficial Foley"
+                                required>
+                        </p>
+
+                        <p>
+                            <label for="data-ocorrencia">Data do Incidente:</label><br>
+                            <input type="date" id="data-ocorrencia" name="data_incidente" required>
+                        </p>
+
+                        <p>
+                            <label for="classificacao-habilidade">Tipo de Habilidade Observada:</label><br>
+                            <input list="lista-habilidades" id="classificacao-habilidade" name="habilidade"
+                                placeholder="Digite ou selecione a habilidade..." required>
+                            <datalist id="lista-habilidades">
+                                <option value="Eletromagnetismo">
+                                <option value="Pirocinese (Controle de Fogo)">
+                                <option value="Manipulação Sonora / Ultrassom">
+                                <option value="Metamorfose Física">
+                                <option value="Camuflagem e Projeção de Sombras">
+                                <option value="Geração de Gás Tóxico">
+                            </datalist>
+                        </p>
+
+                        <p>
+                            <label for="nivel-perigo">Nível Estimado de Ameaça (1 a 10):</label><br>
+                            <input type="range" id="nivel-perigo" name="perigo" min="1" max="10" value="5">
+                        </p>
+
+                        <p>
+                            <label for="cor-aura">Tonalidade Predominante da Energia / Rajada:</label><br>
+                            <input type="color" id="cor-aura" name="cor_energia" value="#00bfff">
+                        </p>
+
+                        <p>
+                            <label for="arquivo-evidencia">Anexo de Foto ou Boletim Físico:</label><br>
+                            <input type="file" id="arquivo-evidencia" name="arquivo_anexo" required>
+                        </p>
+
+                        <p>
+                            <button type="submit">Enviar Notificação</button>
+                            <button type="reset">Limpar Formulário</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+
+        <aside>
+            <h3>Protocolo Legal</h3>
+            <p>Artigo 14 da Lei Municipal de Dakota: Ocultação de incidentes envolvendo mutação induzida sujeita o
+                infrator a sanções administrativas.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico desenvolvido exclusivamente para fins educacionais na faculdade.</p>
+    </footer>
+</body>
+
+</html>
